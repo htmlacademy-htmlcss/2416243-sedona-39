@@ -2,7 +2,7 @@
 
 * Студент: [Sergei Pozdeev](https://up.htmlacademy.ru/htmlcss/39/user/2416243).
 * Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
-* Ссылка на сайт: ().
+* Ссылка на сайт: (https://reking06.github.io/2416243-sedona-39/).
 
 ---
 
