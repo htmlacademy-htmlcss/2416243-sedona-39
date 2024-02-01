@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Sergei Pozdeev](https://up.htmlacademy.ru/htmlcss/39/user/2416243).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
+* Ссылка на сайт: ().
 
 ---
 
