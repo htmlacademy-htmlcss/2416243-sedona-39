@@ -58,23 +58,25 @@
 </header>
 
 <main class="main-catalog" data-test="main">
-  <h1 class="catalog-title">
-    Гостиницы Седоны
-  </h1>
-  <ol class="breadcrumbs">
-    <li class="breadcrumbs-items">
-      <a class="breadcrumbs-link" href="index.html">
+  <header class="main-catalog-header">
+    <h1 class="catalog-title">
+      Гостиницы Седоны
+    </h1>
+    <ol class="breadcrumbs">
+      <li class="breadcrumbs-items">
+        <a class="breadcrumbs-link" href="index.html">
         <span class="visually-hidden">
           Главная
         </span>
-      </a>
-    </li>
-    <li class="breadcrumbs-items">
-      <a class="breadcrumbs-link" href="">
-        Гостиницы
-      </a>
-    </li>
-  </ol>
+        </a>
+      </li>
+      <li class="breadcrumbs-items">
+        <a class="breadcrumbs-link" href="">
+          Гостиницы
+        </a>
+      </li>
+    </ol>
+  </header>
 
   <section class="filters" data-test="filter">
     <h2 class="visually-hidden">
@@ -164,6 +166,12 @@
       <option value="cheap">
         Сначала дешевые
       </option>
+      <option value="popular">
+        Сначала популярное
+      </option>
+      <option value="expensive">
+        Сначала дорогое
+      </option>
     </select>
     <ul class="catalog-view-mode">
       <li class="catalog-view-mode">
@@ -190,10 +198,12 @@
     </ul>
     <ul class="catalog-product-list">
       <li class="catalog-product-card">
-        <img class="catalog-product-img" src="" alt="Окресности Amara Resort & Spa">
-        <h3 class="catalog-product-title">
-          Amara Resort &amp;&nbsp;Spa
-        </h3>
+        <a class="catalog-product-card-link">
+          <img class="catalog-product-img" src="" alt="Окресности Amara Resort & Spa">
+          <h3 class="catalog-product-title">
+            Amara Resort &amp;&nbsp;Spa
+          </h3>
+        </a>
         <p class="catalog-product-type">
           Гостиница
         </p>
@@ -216,10 +226,12 @@
         </p>
       </li>
       <li class="catalog-product-card">
-        <img class="catalog-product-img" src="#" alt="Окресности Villas at Poco Diablo">
-        <h3 class="catalog-product-title">
-          Villas at&nbsp;Poco Diablo
-        </h3>
+        <a class="catalog-product-card-link">
+          <img class="catalog-product-img" src="#" alt="Окресности Villas at Poco Diablo">
+          <h3 class="catalog-product-title">
+            Villas at&nbsp;Poco Diablo
+          </h3>
+        </a>
         <p class="catalog-product-type">
           Гостиница
         </p>
@@ -229,7 +241,7 @@
         <a class="catalog-product-about" href="#">
           подробнее
         </a>
-        <button class="catalog-product-favorite">
+        <button class="catalog-product-favorite catalog-product-favorite-added">
           в избранном
         </button>
         <p class="catalog-product-stars">
@@ -242,10 +254,12 @@
         </p>
       </li>
       <li class="catalog-product-card">
-        <img class="catalog-product-img" src="#" alt="Окресности Desert Quail Inn">
-        <h3 class="catalog-product-title">
-          Desert Quail Inn
-        </h3>
+        <a class="catalog-product-card-link">
+          <img class="catalog-product-img" src="#" alt="Окресности Desert Quail Inn">
+          <h3 class="catalog-product-title">
+            Desert Quail Inn
+          </h3>
+        </a>
         <p class="catalog-product-type">
           Гостиница
         </p>
@@ -268,10 +282,12 @@
         </p>
       </li>
       <li class="catalog-product-card">
-        <img class="catalog-product-img" src="#" alt="Окресности GreenTree Inn">
-        <h3 class="catalog-product-title">
-          GreenTree Inn
-        </h3>
+        <a class="catalog-product-card-link">
+          <img class="catalog-product-img" src="#" alt="Окресности GreenTree Inn">
+          <h3 class="catalog-product-title">
+            GreenTree Inn
+          </h3>
+        </a>
         <p class="catalog-product-type">
           Гостиница
         </p>
@@ -339,7 +355,7 @@
     </p>
     <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="email"></label>
-      <input class="newsletters-input" type="email" name="email" id="email">
+      <input class="newsletters-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
       <button class="newsletters-button" type="submit">
         Подписаться
       </button>
