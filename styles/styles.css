@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Global */
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --ui-color-1: #7db54f;
+  --ui-color-2: #fff;
+  --ui-color-3: #f2f2f2;
+  --ui-color-4: #000;
+  --ui-color-5: #333;
+  --ui-color-6: #756157;
+  --ui-color-7: #82b3d3;
+  --ui-color-8: #3f5e72;
+  --ui-color-9: #e5e5e5;
+  --ui-color-10: #83b3d3;
+  --ui-color-11: rgba(131, 179, 211, 0.12);
+  --ui-color-12: rgba(131, 179, 211, 0.20);
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--ui-color-4);
+  background-color: var(--ui-color-3);
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: var(--ui-color-2);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.heading-1-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.heading-2-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.heading-3-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/* Header */
+
+.header-logo-img {
+  display: block;
+}
+
+.header-menu-link {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--ui-color-4);
+  text-decoration: none;
+}
+
+.site-search {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--ui-color-4);
+  background-color: transparent;
+  border: none;
+}
+
+.favorites-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  min-height: 20px;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: var(--ui-color-2);
+  border-radius: 50%;
+  background-color: var(--ui-color-1);
+}
+
+.header-user-button {
+  width: 160px;
+  min-height: 36px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-6);
+  cursor: pointer;
+}
+
+/* Footer */
+
+.newsletters {
+  min-height: 414px;
+}
+
+.newsletters-input {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--ui-color-4);
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: var(--ui-color-3);
+}
+
+.newsletters-input::placeholder {
+  color: var(--ui-color-4);
+  opacity: 0.6;
+}
+
+.footer-phone {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--ui-color-4);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* -- MAIN-INDEX --  */
+
+/* Hero */
+
+.hero {
+  min-height: 485px;
+  background-image: url("../images/divider.svg"),
+                    url("../images/index-background.jpg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+  background-color: var(--ui-color-8);
+}
+
+/* Features */
+
+.features-title {
+  color: var(--ui-color-4);
+}
+
+.features-list-item {
+  background-color: var(--ui-color-11);
+}
+
+.features-list-item-dark {
+  background-color: var(--ui-color-12);
+}
+
+.features-list-item-wide {
+  background-color: var(--ui-color-7);
+}
+
+.features-list-item-2 {
+  background-color: var(--ui-color-11);
+}
+
+.features-list-item-2-dark {
+  background-color: var(--ui-color-12);
+}
+
+.features-list-title-white {
+  color: var(--ui-color-2);
+}
+
+.features-list-description-white {
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--ui-color-2);
+}
+
+.features-list-title-black {
+  color: var(--ui-color-4);
+}
+
+.features-list-description-dark {
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--ui-color-5);
+}
+
+.features-about {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--ui-color-5);
+}
+
+/* Hotel Search */
+
+.hotel-search-about {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--ui-color-5);
+}
+
+.hotel-search-button {
+  width: 376px;
+  min-height: 52px;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-6);
+}
+
+/* Newsletters Index Page */
+
+.newsletters-index {
+  background-image: url("../images/newsletters-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--ui-color-8);
+}
+
+.newsletters-title-index {
+  color: var(--ui-color-2);
+}
+
+.newsletters-about-index {
+  color: var(--ui-color-2);
+}
+
+.newsletters-button {
+  width: 232px;
+  min-height: 52px;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-7);
+  border-radius: 0 4px 4px 0;
+}
+
+/* -- MAIN-CATALOG -- */
+
+.main-catalog-header {
+  min-height: 412px;
+  background-image: url("../images/catalog-filters-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--ui-color-8);
+}
+
+.catalog-title {
+  color: var(--ui-color-2);
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--ui-color-2);
+}
+
+.catalog-fieldset-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--ui-color-2);
+  text-transform: capitalize;
+}
+
+.catalog-fieldset-option {
+  font-weight: 400;
+  line-height: 23px;
+  color: var(--ui-color-2);
+}
+
+.catalog-filter-submit {
+  width: 191px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-7);
+}
+
+.catalog-filter-reset {
+  width: 191px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--ui-color-2);
+  background-color: transparent;
+}
+
+/* Products Catalog */
+
+.catalog-product-card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.catalog-product-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--ui-color-4);
+}
+
+.catalog-product-type {
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--ui-color-5);
+}
+
+.catalog-product-price {
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--ui-color-5);
+}
+
+.catalog-product-about {
+  width: 140px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-6);
+}
+
+.catalog-product-favorite {
+  width: 140px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-7);
+}
+
+.catalog-product-favorite-added {
+  background-color: var(--ui-color-1);
+}
+
+.catalog-product-stars {
+  width: 140px;
+  min-height: 36px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--ui-color-5);
+  text-transform: uppercase;
+}
+
+.catalog-product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  min-height: 36px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--ui-color-5);
+  text-transform: uppercase;
+  background-color: var(--ui-color-3);
+  border-radius: 4px;
+}
+
+/* Pagination */
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-7);
+}
+
+.pagination-link-current {
+  color: var(--ui-color-4);
+  background-color: var(--ui-color-3);
+}
+
+.pagination-link-more {
+  color: var(--ui-color-4);
+  background-color: transparent;
+}
+
+/* Newsletters */
+
+.newsletters-title-catalog {
+  color: var(--ui-color-4);
+}
+
+.newsletters-about-catalog {
+  color: var(--ui-color-5);
+}
