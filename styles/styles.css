@@ -16,16 +16,12 @@
 
 /* Global */
 
-html {
-  box-sizing: border-box;
-}
-
 :root {
   --ui-color-1: #7db54f;
-  --ui-color-2: #fff;
+  --ui-color-2: #ffffff;
   --ui-color-3: #f2f2f2;
-  --ui-color-4: #000;
-  --ui-color-5: #333;
+  --ui-color-4: #000000;
+  --ui-color-5: #333333;
   --ui-color-6: #756157;
   --ui-color-7: #82b3d3;
   --ui-color-8: #3f5e72;
@@ -45,39 +41,40 @@ body {
 }
 
 .page-container {
-  margin: 0 auto;
   width: 1200px;
+  margin: 0 auto;
   background-color: var(--ui-color-2);
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .heading-1-title {
   font-size: 60px;
-  font-weight: 700;
   line-height: 78px;
+  font-weight: 700;
 }
 
 .heading-2-title {
   font-size: 30px;
-  font-weight: 700;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .heading-3-title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 28px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -90,46 +87,43 @@ body {
 .header-menu-link {
   display: block;
   font-size: 20px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
   color: var(--ui-color-4);
   text-decoration: none;
 }
 
 .site-search {
   font-size: 20px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
   color: var(--ui-color-4);
   background-color: transparent;
   border: none;
 }
 
 .favorites-tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
+  max-width: 30px;
+  min-width: 20px;
   min-height: 20px;
-  overflow: hidden;
+  padding: 4px 5px;
   font-size: 10px;
-  font-weight: 400;
   line-height: 10px;
+  text-align: center;
   color: var(--ui-color-2);
-  border-radius: 50%;
   background-color: var(--ui-color-1);
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .header-user-button {
   width: 160px;
-  min-height: 36px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 8px 10px;
   font-size: 16px;
   line-height: 20px;
   color: var(--ui-color-2);
   background-color: var(--ui-color-6);
-  cursor: pointer;
 }
 
 /* Footer */
@@ -141,12 +135,12 @@ body {
 .newsletters-input {
   padding: 12px 20px;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   color: var(--ui-color-4);
+  background-color: var(--ui-color-3);
   border: none;
   border-radius: 4px 0 0 4px;
-  background-color: var(--ui-color-3);
 }
 
 .newsletters-input::placeholder {
@@ -154,14 +148,24 @@ body {
   opacity: 0.6;
 }
 
+.newsletters-button {
+  width: 232px;
+  padding: 8px 50px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--ui-color-2);
+  background-color: var(--ui-color-7);
+  border-radius: 0 4px 4px 0;
+}
+
 .footer-phone {
   font-size: 40px;
-  font-weight: 400;
   line-height: 40px;
+  text-align: center;
   color: var(--ui-color-4);
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
 }
 
 /* -- MAIN-INDEX --  */
@@ -209,7 +213,6 @@ body {
 }
 
 .features-list-description-white {
-  font-weight: 400;
   line-height: 21px;
   color: var(--ui-color-2);
 }
@@ -219,14 +222,12 @@ body {
 }
 
 .features-list-description-dark {
-  font-weight: 400;
   line-height: 21px;
   color: var(--ui-color-5);
 }
 
 .features-about {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
   color: var(--ui-color-5);
 }
@@ -235,14 +236,12 @@ body {
 
 .hotel-search-about {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
   color: var(--ui-color-5);
 }
 
 .hotel-search-button {
-  width: 376px;
-  min-height: 52px;
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
   color: var(--ui-color-2);
@@ -266,16 +265,6 @@ body {
   color: var(--ui-color-2);
 }
 
-.newsletters-button {
-  width: 232px;
-  min-height: 52px;
-  font-size: 20px;
-  line-height: 36px;
-  color: var(--ui-color-2);
-  background-color: var(--ui-color-7);
-  border-radius: 0 4px 4px 0;
-}
-
 /* -- MAIN-CATALOG -- */
 
 .main-catalog-header {
@@ -292,28 +281,27 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
-  font-weight: 400;
   line-height: 21px;
   color: var(--ui-color-2);
 }
 
 .catalog-fieldset-title {
   font-size: 20px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
   color: var(--ui-color-2);
   text-transform: capitalize;
 }
 
 .catalog-fieldset-option {
-  font-weight: 400;
   line-height: 23px;
   color: var(--ui-color-2);
 }
 
 .catalog-filter-submit {
   width: 191px;
-  min-height: 36px;
+  padding: 8px 10px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: var(--ui-color-2);
@@ -322,7 +310,8 @@ body {
 
 .catalog-filter-reset {
   width: 191px;
-  min-height: 36px;
+  padding: 8px 10px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: var(--ui-color-2);
@@ -338,26 +327,22 @@ body {
 
 .catalog-product-title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 28px;
+  font-weight: 700;
   color: var(--ui-color-4);
 }
 
 .catalog-product-type {
-  font-weight: 400;
-  line-height: 21px;
   color: var(--ui-color-5);
 }
 
 .catalog-product-price {
-  font-weight: 400;
-  line-height: 21px;
   color: var(--ui-color-5);
 }
 
 .catalog-product-about {
   width: 140px;
-  min-height: 36px;
+  padding: 8px 10px;
   font-size: 16px;
   line-height: 20px;
   color: var(--ui-color-2);
@@ -366,7 +351,8 @@ body {
 
 .catalog-product-favorite {
   width: 140px;
-  min-height: 36px;
+  padding: 8px 10px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   color: var(--ui-color-2);
@@ -381,21 +367,17 @@ body {
   width: 140px;
   min-height: 36px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: var(--ui-color-5);
   text-transform: uppercase;
 }
 
 .catalog-product-rating {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 140px;
-  min-height: 36px;
+  padding: 8px 10px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
+  text-align: center;
   color: var(--ui-color-5);
   text-transform: uppercase;
   background-color: var(--ui-color-3);
@@ -405,11 +387,13 @@ body {
 /* Pagination */
 
 .pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
   color: var(--ui-color-2);
   background-color: var(--ui-color-7);
 }
