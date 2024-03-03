@@ -195,7 +195,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: var(--ui-color-4);
   background-color: transparent;
   background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
@@ -274,8 +273,8 @@ body {
 }
 
 .newsletters-about {
-  margin-top: 0;
-  margin-bottom: 54px;
+  max-width: 475px;
+  margin: 0 auto 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -470,7 +469,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 400px;
   min-height: 385px;
   padding: 103px 85px 85px;
@@ -560,10 +558,13 @@ body {
 }
 
 .features-list-item-2 .heading-3-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .features-list-item-2 .features-list-description {
+  margin: 0;
   text-align: center;
 }
 
