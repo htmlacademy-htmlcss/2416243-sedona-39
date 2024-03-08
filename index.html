@@ -249,5 +249,39 @@
     </div>
   </footer>
 </div>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-search">
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 15 15">
+        <path d="M14.5 1.78 13.2.5 7.49 6.2 1.79.5.48 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
+      </svg>
+    </button>
+    <section class="modal-content">
+      <h2 class="heading-2-title modal-title">Поиск гостиницы в Седоне</h2>
+      <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="modal-field">
+          <label class="modal-field-label" for="check-in-date">
+            Дата заезда:
+          </label>
+          <input class="modal-field-input" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату заезда" required>
+          <span class="modal-form-message modal-form-message-error">
+            Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.
+          </span>
+        </p>
+        <p class="modal-field">
+          <label class="modal-field-label" for="check-out-date">
+            Дата выезда:
+          </label>
+          <input class="modal-field-input" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату выезда" required>
+          <span class="modal-form-message">
+            На&nbsp;эти даты есть свободные номера. Пока есть.
+          </span>
+        </p>
+        <button class="custom-button modal-search-form-button" type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+</div>
 </body>
 </html>

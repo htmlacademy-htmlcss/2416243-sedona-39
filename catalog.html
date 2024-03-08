@@ -93,20 +93,23 @@
               <ul class="catalog-fieldset-list list-reset">
                 <li class="catalog-fieldset-list-item">
                   <label class="catalog-fieldset-option">
-                    <input class="catalog-fieldset-option-input" type="checkbox" name="pool" checked>
-                    Бассейн
+                    <input class="visually-hidden catalog-fieldset-option-input" type="checkbox" name="pool" checked>
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-fieldset-list-item">
                   <label class="catalog-fieldset-option">
-                    <input class="catalog-fieldset-option-input" type="checkbox" name="parking" checked>
-                    Парковка
+                    <input class="visually-hidden catalog-fieldset-option-input" type="checkbox" name="parking" checked>
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-fieldset-list-item">
                   <label class="catalog-fieldset-option">
-                    <input class="catalog-fieldset-option-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
+                    <input class="visually-hidden catalog-fieldset-option-input" type="checkbox" name="wi-fi">
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -118,20 +121,23 @@
               <ul class="catalog-fieldset-list list-reset">
                 <li class="catalog-fieldset-list-item">
                   <label class="catalog-fieldset-option">
-                    <input class="catalog-fieldset-option-input" type="radio" name="house-type" value="hotel" checked>
-                    Гостиница
+                    <input class="visually-hidden catalog-fieldset-option-input" type="radio" name="house-type" value="hotel" checked>
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-fieldset-list-item">
                   <label class="catalog-fieldset-option">
-                    <input class="catalog-fieldset-option-input" type="radio" name="house-type" value="motel">
-                    Мотель
+                    <input class="visually-hidden catalog-fieldset-option-input" type="radio" name="house-type" value="motel">
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-fieldset-list-item">
                   <label class="catalog-fieldset-option">
-                    <input class="catalog-fieldset-option-input" type="radio" name="house-type" value="apartment">
-                    Апартаменты
+                    <input class="visually-hidden catalog-fieldset-option-input" type="radio" name="house-type" value="apartment">
+                    <span class="catalog-fieldset-option-mark"></span>
+                    <span class="catalog-fieldset-option-name">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -140,14 +146,26 @@
               <legend class="catalog-fieldset-title">
                 Стоимость, ₽:
               </legend>
-              <label class="catalog-fieldset-range">
-                От
-                <input class="catalog-fieldset-range-input" type="text" name="min-value" value="0">
-              </label>
-              <label class="catalog-fieldset-range">
-                До
-                <input class="catalog-fieldset-range-input" type="text" name="max-value" value="9000">
-              </label>
+              <div class="catalog-range-inputs">
+                <label class="catalog-fieldset-range">
+                  <span class="catalog-fieldset-range-input-label">от</span>
+                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-min" type="text" name="min-price" value="0">
+                </label>
+                <label class="catalog-fieldset-range">
+                  <span class="catalog-fieldset-range-input-label">до</span>
+                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-max" type="text" name="max-price" value="9000">
+                </label>
+              </div>
+              <div class="scale-inputs">
+                <div class="scale-bar" style="left: 0; width: 226px">
+                  <button class="scale-toggle scale-toggle-min">
+                    <span class="visually-hidden">Минимальная цена</span>
+                  </button>
+                  <button class="scale-toggle scale-toggle-max">
+                    <span class="visually-hidden">Максимальная цена</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
             <div class="catalog-filter-button">
               <button class="catalog-filter-submit custom-button" type="submit">
