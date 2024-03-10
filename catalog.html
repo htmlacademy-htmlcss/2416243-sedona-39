@@ -149,19 +149,19 @@
               <div class="catalog-range-inputs">
                 <label class="catalog-fieldset-range">
                   <span class="catalog-fieldset-range-input-label">от</span>
-                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-min" type="text" name="min-price" value="0">
+                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-min" type="number" name="min-price" value="0" min="0" max="8999">
                 </label>
                 <label class="catalog-fieldset-range">
                   <span class="catalog-fieldset-range-input-label">до</span>
-                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-max" type="text" name="max-price" value="9000">
+                  <input class="catalog-fieldset-range-input catalog-fieldset-range-input-max" type="number" name="max-price" value="9000" min="1" max="9000">
                 </label>
               </div>
               <div class="scale-inputs">
                 <div class="scale-bar" style="left: 0; width: 226px">
-                  <button class="scale-toggle scale-toggle-min">
+                  <button class="scale-toggle scale-toggle-min" type="button">
                     <span class="visually-hidden">Минимальная цена</span>
                   </button>
-                  <button class="scale-toggle scale-toggle-max">
+                  <button class="scale-toggle scale-toggle-max" type="button">
                     <span class="visually-hidden">Максимальная цена</span>
                   </button>
                 </div>

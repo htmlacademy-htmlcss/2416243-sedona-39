@@ -125,7 +125,7 @@
         <li class="features-list-item features-list-item-wide flex-row-reverse">
           <div class="features-list-item-container">
             <h3 class="heading-3-title">
-              Там есть мост дьявола
+              Там есть <br>мост дьявола
             </h3>
             <p class="features-list-description">
               Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется
@@ -180,7 +180,7 @@
         Заинтересовались?
       </p>
       <p class="hotel-search-about">
-        Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
+        Укажите предполагаемые даты поездки, <br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
       </p>
       <a class="hotel-search-button custom-button" href="catalog.html">
         Поиск гостиницы в&nbsp;седоне
@@ -264,7 +264,7 @@
           <label class="modal-field-label" for="check-in-date">
             Дата заезда:
           </label>
-          <input class="modal-field-input" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату заезда" required>
+          <input class="modal-field-input" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" required>
           <span class="modal-form-message modal-form-message-error">
             Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.
           </span>
@@ -273,9 +273,61 @@
           <label class="modal-field-label" for="check-out-date">
             Дата выезда:
           </label>
-          <input class="modal-field-input" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату выезда" required>
+          <input class="modal-field-input" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату" required>
           <span class="modal-form-message">
             На&nbsp;эти даты есть свободные номера. Пока есть.
+          </span>
+        </p>
+        <p class="modal-field modal-field-side">
+          <label class="modal-field-label" for="number-of-adults">
+            Взрослые:
+          </label>
+          <span class="modal-field-number-control">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Уменьшить количество человек</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M3 9v2h14V9H3Z"/>
+              </svg>
+            </button>
+            <input class="modal-field-number-input" type="number" id="number-of-adults" name="number-of-adults" value="2" min="0">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Увеличить количество человек</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+              </svg>
+            </button>
+          </span>
+        </p>
+        <p class="modal-field modal-field-side">
+          <span class="modal-field-label-icon">
+            <label class="modal-field-label" for="number-of-children">
+              Дети:
+            </label>
+            <span class="modal-field-tooltip">
+              <button class="modal-field-tooltip-toggle" type="button" aria-labelledby="modal-field-tooltip-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <span class="modal-field-tooltip-text" role="tooltip" id="modal-field-tooltip-label">
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </span>
+          </span>
+          <span class="modal-field-number-control">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Уменьшить количество человек</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M3 9v2h14V9H3Z"/>
+              </svg>
+            </button>
+            <input class="modal-field-number-input" type="number" id="number-of-children" name="number-of-adults" value="2" min="0">
+            <button class="modal-field-number-control-button" type="button">
+              <span class="visually-hidden">Увеличить количество человек</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
+                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+              </svg>
+            </button>
           </span>
         </p>
         <button class="custom-button modal-search-form-button" type="submit">Найти</button>
