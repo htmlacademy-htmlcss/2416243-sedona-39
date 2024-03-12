@@ -486,9 +486,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 400px;
   min-height: 385px;
-  padding: 103px 85px 85px;
+  padding: 86px 85px 85px;
   box-sizing: border-box;
 }
 
@@ -571,8 +572,8 @@ body {
   box-sizing: border-box;
 }
 
-.features-list-item-2-dark {
-  background-color: var(--ui-color-12);
+.features-list-item-medium {
+  background-color: var(--ui-color-11);
 }
 
 .features-list-item-2 .heading-3-title {
@@ -754,7 +755,7 @@ body {
 }
 
 .modal-field-input {
-  padding: 12px 45px 12px 18px;
+  padding: 12px 50px 12px 18px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -763,7 +764,7 @@ body {
   background-color: var(--ui-color-3);
   background-image: url("../images/icons/calender.svg");
   background-repeat: no-repeat;
-  background-position: right 18px center;
+  background-position: right 22px center;
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1500,11 +1501,11 @@ body {
 }
 
 .catalog-product-stars-three {
-  width: 63px;
+  width: 65px;
 }
 
 .catalog-product-stars-four {
-  width: 84px;
+  width: 89px;
 }
 
 .catalog-product-rating {
