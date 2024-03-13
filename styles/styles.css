@@ -223,7 +223,7 @@ body {
   left: 20px;
   max-width: 30px;
   min-width: 20px;
-  min-height: 20px;
+  height: 20px;
   padding: 4px 5px;
   font-size: 10px;
   line-height: 10px;
@@ -359,6 +359,7 @@ body {
 .socials-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 142px;
 }
 
@@ -385,13 +386,13 @@ body {
 }
 
 .footer-phone {
+  max-width: 700px;
   margin: 0 auto;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   color: var(--ui-color-4);
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .footer-phone:hover {
@@ -1281,6 +1282,7 @@ body {
 }
 
 .catalog-products-title {
+  max-width: 400px;
   margin: 0;
 }
 
@@ -1568,9 +1570,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   font-size: 22px;
+  padding: 0 12px;
+  box-sizing: border-box;
 }
 
 /* Newsletters */
