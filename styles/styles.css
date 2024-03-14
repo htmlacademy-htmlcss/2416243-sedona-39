@@ -169,6 +169,22 @@ body {
   text-decoration: none;
 }
 
+.header-menu-link:hover {
+  color: var(--ui-color-10);
+}
+
+.header-menu-link:focus-visible {
+  color: var(--ui-color-10);
+}
+
+.header-menu-link:active {
+  opacity: 0.6;
+}
+
+.header-menu-link-disabled {
+  opacity: 0.3;
+}
+
 .header-menu-link-current {
   position: relative;
 }
@@ -1194,8 +1210,20 @@ body {
   cursor: pointer;
 }
 
+.scale-toggle:hover {
+  background-color: var(--ui-color-10);
+}
+
 .scale-toggle:focus-visible {
   outline: 3px solid var(--ui-color-10);
+}
+
+.scale-toggle:active {
+  background-color: var(--ui-color-13);
+}
+
+.scale-toggle:disabled {
+  opacity: 0.6;
 }
 
 .scale-toggle-min {
