@@ -170,15 +170,15 @@ body {
 }
 
 .header-menu-link:hover {
-  color: var(--ui-color-10);
+  opacity: 0.6;
 }
 
 .header-menu-link:focus-visible {
-  color: var(--ui-color-10);
+  opacity: 0.6;
 }
 
 .header-menu-link:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .header-menu-link-disabled {
@@ -222,6 +222,22 @@ body {
   background-position: center;
   border: none;
   cursor: pointer;
+}
+
+.site-search:hover {
+  opacity: 0.6;
+}
+
+.site-search:focus-visible {
+  opacity: 0.6;
+}
+
+.site-search:active {
+  opacity: 0.3;
+}
+
+.site-search:disabled {
+  opacity: 0.3;
 }
 
 .header-user-item .header-menu-link {
@@ -1210,16 +1226,12 @@ body {
   cursor: pointer;
 }
 
-.scale-toggle:hover {
-  background-color: var(--ui-color-10);
-}
-
 .scale-toggle:focus-visible {
   outline: 3px solid var(--ui-color-10);
 }
 
 .scale-toggle:active {
-  background-color: var(--ui-color-13);
+  outline: 2px solid var(--ui-color-10);
 }
 
 .scale-toggle:disabled {
